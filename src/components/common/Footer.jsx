@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-yellow-400 rounded-xl flex items-center justify-center font-bold text-gray-900">
-                C
+                A
               </div>
               <span className="text-2xl font-bold tracking-tight">
                 Aznanish<span className="text-yellow-400">Logistics</span>

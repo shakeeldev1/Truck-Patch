@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/80 backdrop-blur-lg shadow-sm py-3" : "bg-white py-5"
+        scrolled ? "bg-white/80 backdrop-blur-lg shadow-sm py-3" : "bg-white py-3"
       }`}
     >
       <div className="max-w-screen-xl px-6 mx-auto flex items-center justify-between">
@@ -33,10 +33,10 @@ export default function Navbar() {
         <div className="flex-1 flex justify-start">
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-9 h-9 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg shadow-yellow-200 group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-xl">C</span>
+              <span className="text-white font-bold text-xl">A</span>
             </div>
             <span className="text-xl font-extrabold text-gray-900 tracking-tight">
-              BRAND
+              Aznanish Logistics
             </span>
           </Link>
         </div>
