@@ -23,17 +23,15 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-700">
-            How It Works
-          </span>
+          
 
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
-            Simple Process to Get You{" "}
-            <span className="text-yellow-400">On The Road</span>
+            How It {" "}
+            <span className="text-yellow-400">Works</span>
           </h2>
 
           <p className="text-gray-500 text-lg">
@@ -47,15 +45,12 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-3xl p-10 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-500 group"
+              className="relative bg-white rounded-3xl hover:scale-103 p-10  border-2 border-gray-100 hover:border-yellow-400 shadow-md hover:shadow-xl transition-all duration-500 group"
             >
-              {/* Number */}
-              <div className="absolute -top-6 left-10 w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center text-gray-900 font-black">
-                {step.number}
-              </div>
+              
 
               {/* Icon */}
-              <div className="w-14 h-14 mb-6 rounded-2xl bg-yellow-100 text-yellow-500 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <div className="w-12 h-12 mb-6 absolute top-2 right-2 rounded-2xl bg-yellow-100 group-hover:bg-yellow-500  text-yellow-500 group-hover:text-white flex items-center justify-center text-2xl group-hover:scale-110 transition duration-500">
                 {step.icon}
               </div>
 

@@ -23,14 +23,14 @@ export function ServicesSection() {
       desc: "We negotiate top market rates with brokers and shippers so you earn more per mile.",
       icon: <FaHandshake />,
       image:
-        "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=800",
+        "https://images.unsplash.com/photo-1762908407323-28e9a9efd0be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TG9hZCUyMEJvb2tpbmclMjAlMjYlMjBSYXRlJTIwTmVnb3RpYXRpb24lMjB0cnVja3N8ZW58MHx8MHx8fDA%3D",
     },
     {
       title: "Broker & Shipper Communication",
       desc: "We handle all calls, emails, and confirmations with brokers so you can focus on driving.",
       icon: <FaHeadset />,
       image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+        "https://media.istockphoto.com/id/2151802994/photo/female-semitruck-driver-handshake-with-fleet-manager-deal-agreed.webp?a=1&b=1&s=612x612&w=0&k=20&c=_bZOpEi3WKFNMpS19KrbL3qPEl63Ly2ZWvdh5-1I5sQ=",
     },
     {
       title: "Invoicing & Billing Support",
@@ -44,28 +44,7 @@ export function ServicesSection() {
       desc: "Smart route planning to reduce deadhead miles, fuel costs, and delivery delays.",
       icon: <FaRoute />,
       image:
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "DOT Compliance & Safety Support",
-      desc: "Stay compliant with FMCSA regulations, safety paperwork, and documentation.",
-      icon: <FaShieldAlt />,
-      image:
-        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "ELD & TMS Monitoring",
-      desc: "We monitor your ELD logs and TMS systems to keep dispatch smooth and compliant.",
-      icon: <FaSatelliteDish />,
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    },
-    {
-      title: "24/7 Driver Support",
-      desc: "Day or night, our dispatch team is always available to assist drivers on the road.",
-      icon: <FaMapMarkedAlt />,
-      image:
-        "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?auto=format&fit=crop&q=80&w=800",
+        "https://media.istockphoto.com/id/1474043787/photo/foreperson-talking-to-a-truckdriver-while-working-at-a-distribution-warehouse.webp?a=1&b=1&s=612x612&w=0&k=20&c=TOtKPJm70SmFauUqEn7pEHT4QfnalIWlRnLrlANU_YU=",
     },
   ];
 
@@ -73,10 +52,7 @@ export function ServicesSection() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-700">
-            Our Services
-          </span>
-
+        
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             Complete <span className="text-yellow-400">Dispatch Solutions</span>
           </h2>
@@ -91,7 +67,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group"
+              className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-500 group"
             >
               <div className="h-48 w-full overflow-hidden relative">
                 <img
@@ -99,14 +75,14 @@ export function ServicesSection() {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
                 <div className="absolute bottom-4 left-6 w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center text-white text-xl shadow-lg border-2 border-white">
                   {service.icon}
                 </div>
               </div>
 
-              <div className="p-8">
+              <div className="py-4 px-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-yellow-500 transition-colors">
                   {service.title}
                 </h3>
@@ -114,12 +90,6 @@ export function ServicesSection() {
                   {service.desc}
                 </p>
 
-                <div className="flex items-center text-gray-900 font-bold text-xs uppercase tracking-widest hover:text-yellow-500 transition-colors cursor-pointer">
-                  Learn More
-                  <span className="ml-2 group-hover:translate-x-2 transition-transform">
-                    →
-                  </span>
-                </div>
               </div>
             </div>
           ))}

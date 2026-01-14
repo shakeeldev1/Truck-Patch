@@ -21,25 +21,22 @@ export function ServicesTiming() {
         "https://images.unsplash.com/photo-1714009889233-6699f04623ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJ1Y2slMjBkaXNwYXRjaGluZyUyMG5pZ2h0JTIwdGltZXxlbnwwfHwwfHx8MA%3D%3D",
       reverse: true,
     },
-    {
-      title: "Auto Transport Dispatch",
-      desc: `Could it be said that you are a vehicle hauler needing dispatch
-      administration to assist with keeping your trucks stacked?
-      Aznanish Dispatching Services offers a total dispatch bundle for vehicle haulers
-      in the auto transport industry. Our vehicle hauler dispatch service boosts your
-      profitability and saves you time.`,
-      image:
-        "https://media.istockphoto.com/id/1402544709/photo/vehicle-transport-truck-on-highway.webp?a=1&b=1&s=612x612&w=0&k=20&c=QWWhsoZQedEo8NKYYj_ZNZAe5qYD7mYz6CETGf5hrO8=",
-    },
+    
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 space-y-24">
+    <section className="py-20 bg-white">
+
+      <div className="flex flex-col gap-4 items-center justify-center pb-12">
+        <h1 className="text-4xl font-black">24/7 <span className="text-yellow-500">Support</span></h1>
+        <p className="text-gray-700 text-lg">Our services are for 24 and 7. See our day and night time support below.</p>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 space-y-16">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`grid lg:grid-cols-2 gap-14 items-center ${
+            className={`grid lg:grid-cols-2 gap-14 items-center border border-gray-200 rounded-3xl shadow-lg hover:shadow-xl transition duration-400 p-8 ${
               service.reverse ? "lg:flex-row-reverse" : ""
             }`}
           >
