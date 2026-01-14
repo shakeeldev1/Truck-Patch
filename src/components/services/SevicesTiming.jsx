@@ -25,12 +25,18 @@ export function ServicesTiming() {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 space-y-24">
+    <section className="py-20 bg-white">
+
+      <div className="flex flex-col gap-4 items-center justify-center pb-12">
+        <h1 className="text-4xl font-black">24/7 <span className="text-yellow-500">Support</span></h1>
+        <p className="text-gray-700 text-lg">Our services are for 24 and 7. See our day and night time support below.</p>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 space-y-16">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`grid lg:grid-cols-2 gap-14 items-center ${
+            className={`grid lg:grid-cols-2 gap-14 items-center border border-gray-200 rounded-3xl shadow-lg hover:shadow-xl transition duration-400 p-8 ${
               service.reverse ? "lg:flex-row-reverse" : ""
             }`}
           >
