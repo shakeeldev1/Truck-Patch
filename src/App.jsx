@@ -13,11 +13,14 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Login from "./components/common/Login";
 import Signup from "./components/common/Signup";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Layout component
 const MainLayout = () => {
   return (
     <div className="overflow-x-hidden">
+      <ScrollToTop/>
       <Navbar />
       <Outlet /> {/* Child routes render here */}
       <Footer />
@@ -37,6 +40,7 @@ const router = createBrowserRouter([
       { path: "services", element: <Services /> },
       { path: 'login', element: <Login /> },
       { path: 'signup', element: <Signup /> },
+      {path: 'privacy', element: <PrivacyPolicy/>}
     ],
   },
 ]);
