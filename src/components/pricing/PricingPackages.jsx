@@ -29,11 +29,11 @@ const PricingPackages = () => {
                     Simple Pricing
                 </span>
 
-                <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 ">
                     Pricing & <span className="text-yellow-400">Packages</span>
                 </h2>
 
-                <p className="text-gray-500 text-lg mb-10 max-w-lg">
+                <p className="text-gray-500 text-lg mb-10 max-w-lg px-3">
                     One transparent price. No hidden fees. Full dispatch support to keep
                     your trucks profitable and stress-free.
                 </p>

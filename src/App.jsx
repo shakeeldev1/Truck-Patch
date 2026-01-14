@@ -5,12 +5,16 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Home from './pages/Home';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Pricing from './pages/Pricing';
+
 
 // Layout component
 const MainLayout = () => {
   return (
     <div className="overflow-x-hidden">
-    
+
       <Navbar />
       <Outlet /> {/* Child routes render here */}
       <Footer />
@@ -24,22 +28,22 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <Home /> },
-  
+      { path: 'plans', element: <Pricing /> }
 
     ],
   },
-  
+
 ]);
 
 
 function App() {
 
   useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-}, []);
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return <RouterProvider router={router} />;
 }

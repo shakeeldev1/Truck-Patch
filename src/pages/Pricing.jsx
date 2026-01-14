@@ -1,14 +1,14 @@
 import React from 'react'
-import HeroSectionPricin from '../components/HeroSectionPricin'
-import PricingPackages from '../components/PricingPackages'
 import Dispatching from '../components/pricing/Dispatching'
+import PricingPackages from '../components/pricing/PricingPackages'
+import HeroSectionPricing from '../components/pricing/HeroSectionPricing'
 
 const Pricing = () => {
   return (
     <>
-     
-    <HeroSectionPricin/>
-    <PricingPackages/>
+    
+     <HeroSectionPricing/>
+     <PricingPackages/>
     <Dispatching/>
     </>
   )

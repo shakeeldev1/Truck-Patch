@@ -1,32 +1,15 @@
 import { FaCheckCircle, FaTruckMoving, FaEnvelope } from "react-icons/fa";
 
-const features = [
-  "Setup Paperwork",
-  "24/7 Dispatch Support",
-  "Fax / Email Documents",
-  "Credit Checks",
-  "Personal Dispatcher",
-  "Request Quick Pay",
-  "No Forced Dispatch",
-  "Payload & FSC = 100% Yours",
-  "Request Fuel Advances",
-  "We Negotiate Top Paying Rates",
-  "Request Insurance Certificates",
-  "Driver Directions Assistance",
-  "Factor Setup Assistance",
-  "Collection Assistance",
-  "Unused Truck Order Assistance",
-  "Detention Charges Assistance",
-];
 
-const Pricing = () => {
+
+const Dispatching = () => {
   return (
     <section className="bg-gray-50 py-20 px-4">
       <div className="max-w-6xl mx-auto">
 
-      
+
         <div className="grid md:grid-cols-2 gap-8 mt-20">
-          {[ 
+          {[
             "https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg",
             "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg",
           ].map((img, i) => (
@@ -72,4 +55,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Dispatching;
