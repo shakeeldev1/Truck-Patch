@@ -47,14 +47,14 @@ const ServiceCard = ({ children, index, reverse }) => {
 
 const DispatchSection = () => {
   return (
-    <section className="py-20 bg-gray-50/30 overflow-hidden">
+    <section className="py-10 bg-gray-50/30 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 relative">
           <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-7xl font-black text-gray-200/20 uppercase select-none">
             Services
           </div>
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4 uppercase tracking-tight relative z-10">
+          <h2 className="text-3xl md:text-3xl font-black text-gray-900 mb-4 uppercase tracking-tight relative z-10">
             DEDICATED PROFESSIONAL <span className="text-yellow-400 underline decoration-gray-900 underline-offset-8">TRUCK DISPATCH</span>
           </h2>
           <p className="text-gray-500 font-medium max-w-xl mx-auto text-sm">

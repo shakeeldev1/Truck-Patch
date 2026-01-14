@@ -9,8 +9,8 @@ function Home() {
   return (
     <main>
       <HeroSlider />
-      <StatsSection />
       <DispatchSection />
+      <StatsSection />
       <FeaturesSection />
       <ContactSection />
     </main>

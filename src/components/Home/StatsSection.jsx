@@ -55,7 +55,7 @@ const StatCard = ({ stat, index, isVisible }) => {
 
   return (
     <div 
-      className={`group relative p-6 bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-200/40 hover:shadow-xl hover:shadow-yellow-200/30 hover:-translate-y-2 transition-all duration-700 text-center overflow-hidden transform ${
+      className={`group relative p-6 bg-gradient:bg-gradient-to-br from-[#F0A500] to-[#CF7500] rounded-3xl border border-gray-100  hover:shadow-xl hover:shadow-yellow-200/30 hover:-translate-y-2 transition-all duration-700 text-center overflow-hidden shadow-[0_10px_20px_rgba(255,215,0,0.4)] transform ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
       }`}
       style={{ transitionDelay: `${index * 200}ms` }}
@@ -106,7 +106,7 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-50 relative overflow-hidden">
+    <section className="py-10 bg-gray-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
             <div className="absolute top-1/4 -left-20 w-72 h-72 bg-yellow-200/20 rounded-full blur-[100px]" />
             <div className="absolute bottom-1/4 -right-20 w-64 h-64 bg-blue-100/20 rounded-full blur-[80px]" />
