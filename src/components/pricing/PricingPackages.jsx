@@ -24,20 +24,27 @@ const PricingPackages = () => {
     return (
         <section className="py-12  bg-gradient-to-b from-gray-100 to-white">
 
-            <div className=" flex flex-col justify-center items-center ">
-                <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-700">
+            <div
+                className="flex flex-col justify-center items-center"
+                data-aos="fade-up"          // animation type
+                data-aos-duration="800"      // duration in ms
+                data-aos-delay="100"         // optional delay
+                data-aos-easing="ease-in-out" // easing style
+            >
+                <span className="inline-block mb-4 px-4 py-1 text-sm font-bold rounded-full bg-yellow-400 text-black/70" data-aos="zoom-in" data-aos-delay="200">
                     Simple Pricing
                 </span>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 ">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6" data-aos="fade-up" data-aos-delay="300">
                     Pricing & <span className="text-yellow-400">Packages</span>
                 </h2>
 
-                <p className="text-gray-500 text-lg mb-10 max-w-lg px-3">
+                <p className="text-gray-500 text-lg mb-10 max-w-lg px-3" data-aos="fade-up" data-aos-delay="400">
                     One transparent price. No hidden fees. Full dispatch support to keep
                     your trucks profitable and stress-free.
                 </p>
             </div>
+
 
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -48,7 +55,7 @@ const PricingPackages = () => {
                         <img
                             src="/pricing-img.jpg"
                             alt="Pricing"
-                            className="w-full h-[520px] object-cover hover:scale-110 transition duration-700"
+                            className="w-full lg:h-[520px] object-cover hover:scale-110 transition duration-700"
                         />
                     </div>
                 </div>
