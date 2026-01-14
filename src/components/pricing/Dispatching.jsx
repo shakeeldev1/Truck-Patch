@@ -4,11 +4,11 @@ import { FaCheckCircle, FaTruckMoving, FaEnvelope } from "react-icons/fa";
 
 const Dispatching = () => {
   return (
-    <section className="bg-gray-50 py-20 px-4">
+    <section className="bg-[#e5e5e5] pb-3 pt-6 px-4">
       <div className="max-w-6xl mx-auto">
 
 
-        <div className="grid md:grid-cols-2 gap-8 mt-20">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {[
             "https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg",
             "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg",
@@ -27,7 +27,7 @@ const Dispatching = () => {
         </div>
 
         {/* COMPANY INFO */}
-        <div className="mt-24 text-center">
+        <div className="mt-12 text-center">
           <h4 className="text-2xl font-semibold text-gray-900 mb-3">
             Aznanish Dispatching Services LLC
           </h4>

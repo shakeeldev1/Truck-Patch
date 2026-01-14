@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Pricing from './pages/Pricing';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 // Layout component
@@ -28,7 +30,9 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'plans', element: <Pricing /> }
+      { path: 'about', element: <About /> },
+      { path: 'plans', element: <Pricing /> },
+      { path: 'contact', element: <Contact /> },
 
     ],
   },

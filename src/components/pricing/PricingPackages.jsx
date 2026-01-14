@@ -22,7 +22,7 @@ const PricingPackages = () => {
     ];
 
     return (
-        <section className="pt-26 pb-28 bg-gradient-to-b from-gray-100 to-white">
+        <section className="py-12  bg-gradient-to-b from-gray-100 to-white">
 
             <div className=" flex flex-col justify-center items-center ">
                 <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold rounded-full bg-yellow-100 text-yellow-700">
@@ -91,7 +91,7 @@ const PricingPackages = () => {
                         </ul>
 
                         {/* CTA BUTTON */}
-                        <button className="mt-10 w-full bg-gray-900 text-white py-4 rounded-full text-lg font-bold hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300 shadow-lg">
+                        <button className="mt-10 w-full bg-gray-900 text-white py-2 cursor-pointer  rounded-full text-lg font-bold hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300 shadow-lg">
                             Get Started Now
                         </button>
                     </div>

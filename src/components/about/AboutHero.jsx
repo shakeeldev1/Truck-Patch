@@ -53,10 +53,10 @@ export default function AboutHero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <button className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-5 py-2 rounded-full transition-all shadow-lg shadow-yellow-400/30 active:scale-95">
+                  <button className="w-full cursor-pointer sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-5 py-2 rounded-full transition-all shadow-lg shadow-yellow-400/30 active:scale-95">
                     View Services
                   </button>
-                  <button className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white font-bold px-5 py-2 rounded-full transition-all active:scale-95">
+                  <button className="w-full cursor-pointer sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white font-bold px-5 py-2 rounded-full transition-all active:scale-95">
                     Contact Us
                   </button>
                 </div>

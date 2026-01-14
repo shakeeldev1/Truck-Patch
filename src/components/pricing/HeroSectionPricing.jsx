@@ -10,10 +10,10 @@ const HeroSectionPricing = () => {
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
-      <div className="relative h-[90vh] rounded-2xl overflow-hidden group">
+      <div className="relative h-[100vh]  overflow-hidden group">
         {/* Background Image */}
         <img
-          src="https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg"
+          src="/pricing-img.jpg"
           alt="Truck driving on highway"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
@@ -30,6 +30,21 @@ const HeroSectionPricing = () => {
           <p className="mt-4 text-lg text-gray-200 max-w-3xl">
             Transparent pricing, expert dispatch support, and faster load management.
           </p>
+
+          {/* Features */}
+          <div className="mt-6 flex flex-wrap justify-center gap-6">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-center space-x-2 text-white">
+                {feature.icon}
+                <span className="text-lg font-medium">{feature.text}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <button className="mt-8 bg-yellow-400 text-black hover:text-white cursor-pointer font-bold py-2 px-5 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+            Get Started Today
+          </button>
         </div>
       </div>
     </section>
