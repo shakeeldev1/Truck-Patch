@@ -4,13 +4,6 @@ import { useEffect } from "react";
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Home from './pages/Home';
-import Pricing from './pages/Pricing';
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-
-
-
 
 
 // Layout component
@@ -31,7 +24,6 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <Home /> },
-        { path: 'plans', element: <Pricing /> },
   
 
     ],
