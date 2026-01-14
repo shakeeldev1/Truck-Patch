@@ -3,16 +3,19 @@ import HeroSlider from '../components/Home/HeroSlider'
 import StatsSection from '../components/Home/StatsSection'
 import DispatchSection from '../components/Home/DispatchSection'
 import FeaturesSection from '../components/Home/FeaturesSection'
-import ContactSection from '../components/Home/ContactSection'
+import Fulfilment from '../components/Home/Fulfilment'
+import Capablities from '../components/Home/Capablities'
 
 function Home() {
   return (
     <main>
       <HeroSlider />
       <DispatchSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
+      <Fulfilment/>
       <FeaturesSection />
-      <ContactSection />
+      <Capablities/>
+     
     </main>
   )
 }
