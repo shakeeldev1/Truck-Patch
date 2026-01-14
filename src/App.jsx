@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import Pricing from './pages/Pricing';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Login from './components/common/Login';
+import Signup from './components/common/Signup';
 
 
 // Layout component
@@ -33,6 +35,9 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'plans', element: <Pricing /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'login', element: <Login /> },
+      { path: 'signup', element: <Signup /> },
+
 
     ],
   },

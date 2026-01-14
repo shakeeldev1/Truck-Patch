@@ -13,7 +13,7 @@ export default function Capabilities() {
   };
 
   return (
-    <section className="bg-white  border-b-2 border-yellow-400 py-20 px-4 sm:px-6">
+    <section className="bg-white   py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
 
         {/* LEFT – IMAGES */}

@@ -128,7 +128,7 @@ const HeroSlider = () => {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-2 rounded-full transition-all duration-500 ${
+            className={`h-2 rounded-full cursor-pointer transition-all duration-500 ${
               index === current ? "w-12 bg-yellow-400" : "w-3 bg-white/40 hover:bg-white/60"
             }`}
           />
