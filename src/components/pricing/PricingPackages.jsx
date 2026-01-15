@@ -65,7 +65,7 @@ const PricingPackages = () => {
 
 
                     {/* PRICE CARD */}
-                    <div data-aos="zoom-in" data-aos-delay="600" className="relative bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
+                    <div data-aos="zoom-in" data-aos-delay="600" className="relative bg-white rounded-3xl shadow-xl border border-gray-100 p-5 ">
 
                         {/* Price Badge */}
                         <div className="absolute -top-6 right-8 bg-gray-900 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
