@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCheckCircle, FaTruckMoving, FaDollarSign } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const HeroSectionPricing = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
+  
 
   const features = [
     { icon: <FaCheckCircle className="text-yellow-400" />, text: "No Contracts" },
